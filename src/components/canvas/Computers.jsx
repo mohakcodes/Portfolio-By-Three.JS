@@ -11,7 +11,6 @@ const ComputersCanvas = () => {
   useEffect(()=>{
     const mQuery = window.matchMedia('(max-width:450px)');
     setIsMobile(mQuery.matches);
-    console.log(mQuery.matches);
 
     const handleMQuerychange = (event) => {
       setIsMobile(event.matches);
