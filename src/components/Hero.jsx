@@ -5,6 +5,7 @@ import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
+
   return (
     <section className='relative w-full h-screen mx-auto pb-0'>
 
@@ -30,7 +31,7 @@ const Hero = () => {
 
       <ComputersCanvas/>
 
-      <div className='absolute xs:bottom-2 bottom-10 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-2 bottom-24 w-full flex justify-center items-center'>
         <a href="#about" className=''>
           <div className='w-[25px] h-[45px] rounded-3xl border-2 border-white flex justify-center items-start'>
             <motion.dev

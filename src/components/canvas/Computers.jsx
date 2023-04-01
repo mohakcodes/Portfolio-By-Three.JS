@@ -9,7 +9,7 @@ const ComputersCanvas = () => {
   const [isMobile , setIsMobile] = useState(false);
 
   useEffect(()=>{
-    const mQuery = window.matchMedia('(max-width:500px)');
+    const mQuery = window.matchMedia('(max-width:450px)');
     setIsMobile(mQuery.matches);
     console.log(mQuery.matches);
 
@@ -42,8 +42,8 @@ const ComputersCanvas = () => {
         <primitive
           object={computer.scene}
           scale={isMobile ? 0.55 : 0.7}
-          position={isMobile ? [0 , -3.3 , -1.2] : [0 , -3.5 , -1.3]}
-          rotation={[0 , 0 , -0.03]}
+          position={isMobile ? [1 , -2.3 , -1.3] : [2 , -3.35 , -2]}
+          rotation={isMobile ? [0 , -0.06 , -0.1] : [0 , 0 , -0.03]}
         />
       </mesh>
     )
@@ -54,7 +54,7 @@ const ComputersCanvas = () => {
             shadows
             camera={{position:[20,3,5] , fov:25}}
             gl={{preserveDrawingBuffer:true}}
-            className={isMobile ? 'pt-14' : 'pt-10'}
+            className={isMobile ? "pt-14" : "pt-10"}
     >
 
       <Suspense fallback={<Canvasloader/>}>
