@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    leetcode,
+    ebazaar,
 } from "../assets";
 
 export const navLinks = [
@@ -116,56 +118,56 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "GPT-3 Theme Landing Page",
+        company_name: "React.JS",
+        icon: reactjs,
+        iconBg: "#1f00a8",
+        date: "Jan 2023",
+        points: [
+            "Futuristic Chat-GPT theme AI landing page built using React.JS",
+            "Created using react components",
+            "Having responsive design and modern website experience",
+        ],
+        link:"https://github.com/mohakcodes/GPT3_Landing_Page"
+    },
+    {
+        title: "Snake Game by LinkedList",
+        company_name: "JavaScript + Data Structure",
+        icon: javascript,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "Feb 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed snake game using Javascript and LinkedList",
+            "Snake grows when eats red food & reverse and grows on eating the purple one",
+            "Used reversing property of LinkedList in the game",
         ],
+        link:"https://github.com/mohakcodes/Snake_Game_By_LinkedList"
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        title: "E-Bazaar",
+        company_name: "React.JS + Node.JS + MySQL",
+        icon: ebazaar,
+        iconBg: "#000000",
+        date: "March 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed E-Bazaar (An E-commerce website for farmers)",
+            "A group project, collaborating with my college-mates, I contributed in Frontend Development using React.JS",
+            "Backend is based on Node.JS and MySQL database",
         ],
+        link:"https://github.com/Gunanidhi-Trivedi/demo"
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        title: "700+ DSA PROBLEMS",
+        company_name: "LeetCode + GeeksForGeeks",
+        icon: leetcode,
+        iconBg: "#7515bf",
+        date: "Jan 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Solved more than 700 DSA problems over LeetCode and GeeksForGeeks",
+            "Practicing DSA from more than 1 year",
+            "Gave 24 contests over LeetCode, Highest Rank being #4233 till now and Maximum 3 problems solved in a Contest",
         ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        link:"https://leetcode.com/mohakcodes/"
     },
 ];
 
