@@ -8,7 +8,6 @@ import Contact from "./components/Contact"
 import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
-import Tech from "./components/Tech"
 import StarsCanvas from "./components/canvas/Stars"
 
 const App = () => {
@@ -28,7 +27,6 @@ const App = () => {
         </div>
 
         <div className='relative z-0'>
-          <Tech/>
           <Contact/>
           <StarsCanvas/>
         </div>
