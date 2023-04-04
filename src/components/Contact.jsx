@@ -1,99 +1,26 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser'
-import { styles } from '../styles'
-import { EarthCanvas } from './canvas'
-import { Wrapper } from '../hoc'
-import { slideIn } from '../utils/motion'
+import React from 'react'
+import {FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { Wrapper } from '../hoc';
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form , setForm] = useState({
-    name:"",
-    email:"",
-    message:"",
-  })
-  const[loading , setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    
-  }
-  const handleSubmit = (e) => {
-
-  }
-
   return (
-    <div className='xl:flex-row flex-col flex overflow-hidden'>
-      <motion.div
-        variants={slideIn('left' , 'tween' , 0.2 , 1)}
-        className='flex-[0.9] bg-black-100 p-6 rounded-2xl'
-      >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-6 flex flex-col gap-6'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type="text"
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder='Add Your Name'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary 
-                         text-white rounded-lg outlined-none borded-none font-medium'
-            />
-          </label>
-
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Email</span>
-            <input
-              type="email"
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder='Add Your Email'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary 
-                         text-white rounded-lg outlined-none borded-none font-medium'
-            />
-          </label>
-          
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows="5"
-              type="message"
-              name='name'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What do you want to say'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary 
-                         text-white rounded-lg outlined-none borded-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit
-                       text-white font-bold shadow-md shadow-primary rounded-xl'
-          >
-              {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
-
-      </motion.div>
-
-      <motion.div
-        variants={slideIn('right' , 'tween' , 0.2 , 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas/>
-      </motion.div>
-    </div>
+      <div className='flex sm:flex-row flex-col justify-around items-center'>
+        <div className='m-12 mt-2'>
+          <h3 className='p-2 pl-3 text-[22px] font-semibold'>@mohakcodes</h3>
+          <p className='pb-2 pl-4 text-[18px]'>Feel free to connect <span className='text-[25px]'>&#x270C;</span> </p>
+        </div>
+        <div className='m-12 mt-0'>
+          <h3 className='p-4 text-[20px] font-semibold'>Follow Me &nbsp; : )</h3>
+          <div className='flex flex-row justify-center p-2 pl-1'>
+            <div className='pr-2'>
+              <a href="https://www.linkedin.com/in/mohak-chauhan/" target='_'><FaLinkedin size={30}/></a>
+            </div>
+            <div className='pl-2'>
+              <a href="https://github.com/mohakcodes" target='_'><FaGithubSquare size={30}/></a>
+            </div>
+          </div>
+        </div>
+      </div>
   )
 }
 
